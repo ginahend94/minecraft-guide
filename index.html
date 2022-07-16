@@ -1,0 +1,538 @@
+<!---------------------------------------------------------------------------
+                         _                                                  
+     o                  | |                   |                             
+ __,     _  _    __,    | |     _   _  _    __|   _   ,_    ,   __   _  _   
+/  | |  / |/ |  /  |    |/ \   |/  / |/ |  /  |  |/  /  |  / \_/  \_/ |/ |  
+\_/|/|_/  |  |_/\_/|_/  |   |_/|__/  |  |_/\_/|_/|__/   |_/ \/ \__/   |  |_/
+  /|                                                                        
+  \|                                                                        
+
+---------------------------------------------------------------------------->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <title>Gina's Unofficial Minecraft Beginner's Guide</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <nav id="navbar">
+            <div id="menu-button" onclick="menu(this)">&#9776;</div>
+            <header>
+                <h1><span id="ginas-unofficial">Gina's Unofficial</span><br /><img id="minecraft-logo"
+                        src="https://bit.ly/3zlSdRN" alt="Minecraft" /> <span id="beginners-guide">Beginner's
+                        Guide</span>
+                </h1>
+            </header>
+            <ul id="navbar-links" style="height:0px;">
+                <a class="nav-link" href="#introduction" id="intro-link" onclick="changeBackground('A332A3')">
+                    <li>Introduction</li>
+                </a>
+                <a class="nav-link" href="#getting_started" id="getting-started-link"
+                    onclick="changeBackground('c0459f')">
+                    <li>Getting Started</li>
+                </a>
+                <a class="nav-link" href="#your_first_night" id="your-first-night-link"
+                    onclick="changeBackground('DC589A')">
+                    <li>Your First Night</li>
+                </a>
+                <a class="nav-link" href="#gathering_resources" id="gathering-resources-link"
+                    onclick="changeBackground('E86993')">
+                    <li>Gathering Resources</li>
+                </a>
+                <a class="nav-link" href="#entering_the_nether" id="entering-the-nether-link"
+                    onclick="changeBackground('F4798C')">
+                    <li>Entering the Nether</li>
+                </a>
+                <a class="nav-link" href="#getting_to_the_end" id="getting-to-the-end-link"
+                    onclick="changeBackground('FA949C')">
+                    <li>Getting to the End</li>
+                </a>
+                <a class="nav-link" href="#defeating_the_dragon" id="defeating-the-dragon-link"
+                    onclick="changeBackground('FFAEAC')">
+                    <li>Defeating the Dragon</li>
+                </a>
+                <a class="nav-link" href="#what_now" id="what-now-link" onclick="changeBackground('FFB9AA')">
+                    <li>What Now</li>
+                </a>
+                <a class="nav-link" href="#more_resources" id="more-resources-link"
+                    onclick="changeBackground('FFC4A8')">
+                    <li>More Resources</li>
+                </a>
+            </ul>
+            <div id="stickers">
+                <img id="squid" class="sticker"
+                    src="https://mystickermania.com/cdn/stickers/minecraft/minecraft-cute-squid.svg" />
+                <img id="creeper" class="sticker"
+                    src="https://mystickermania.com/cdn/stickers/minecraft/minecraft-creeper-free-hugs.svg" />
+                <img id="diamond" class="sticker"
+                    src="https://mystickermania.com/cdn/stickers/minecraft/minecraft-diamond.svg" />
+                <img id="hearts" class="sticker"
+                    src="https://mystickermania.com/cdn/stickers/minecraft/sticker_2959.svg" />
+                <img id="skeleton" class="sticker"
+                    src="https://mystickermania.com/cdn/stickers/minecraft/minecraft-cute-skeleton.svg" />
+            </div>
+            <footer>
+                Minecraft is the property of Mojang Studios.<br />Site created by <a
+                    href="https://codepen.io/ginahend94" target="_blank">Gina H</a>.
+            </footer>
+        </nav>
+        <main id="main-doc">
+            <div id="stickers2">
+                <img id="hearts2" class="sticker"
+                    src="https://mystickermania.com/cdn/stickers/minecraft/sticker_2959.svg" />
+                <img id="hearts3" class="sticker"
+                    src="https://mystickermania.com/cdn/stickers/minecraft/sticker_2959.svg" />
+                <img class="sticker" id="dog"
+                    src="https://mystickermania.com/cdn/stickers/minecraft/minecraft-dog-hearts.svg" />
+                <img class="sticker" id="axolotl"
+                    src="https://mystickermania.com/cdn/stickers/minecraft/minecraft-axolotl-bucket.svg" />
+                <img class="sticker" id="slime"
+                    src="https://mystickermania.com/cdn/stickers/minecraft/sticker_2874.svg" />
+                <img id="diamond2" class="sticker"
+                    src="https://mystickermania.com/cdn/stickers/minecraft/minecraft-diamond.svg" />
+            </div>
+            <section class="main-section" id="introduction">
+                <header>
+                    <h2>Introduction<h2>
+                </header>
+                <p>
+                    Minecraft is a wildly popular video game. New users are trying it out every day. If you happen to
+                    find
+                    yourself as one of these Minecraft newcomers, and you're looking for where to start, you've come to
+                    a
+                    reasonably adequate place!
+                </p>
+                <figure id="selfie"><img src="https://tinyimg.io/i/0dpUTH5.jpeg" />
+                    <figcaption>that's me!</figcaption>
+                </figure>
+                <p>
+                    My name is Gina, and I'm a fully-grown adult woman who plays Minecraft for hours at a time.<br />
+                    Now that we've gotten the introductions out of the way, you may be asking what makes me qualified to
+                    write up a guide to Minecraft. The answer, my friends, is absolutely nothing. However, I do have my
+                    own
+                    experiences from when I was new player &#40;about seven years ago&#41;. Back then, I had a tendency
+                    to
+                    overthink <em>everything</em> in-game &#40;and out-of-game&#41;. It took me way too long to beat the
+                    game &#40;yeah, you can <em>beat Minecraft</em>&#41;. Now, I hope to pass on the basics I discovered
+                    along the way. So go ahead and scroll down to get started<span id="desktop">, or click on one of the
+                        tabs to jump to a section</span>!
+                </p>
+            </section>
+            <section class="main-section" id="getting_started">
+                <header>
+                    <h2>Getting Started</h2>
+                </header>
+                <figure id="mc-download">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/5/51/Minecraft_cover.png" />
+                    <figcaption>you'll be playing soon</figcaption>
+                </figure>
+                <p>
+                    Before you're able to play Minecraft, you'll have to <a
+                        href="https://www.minecraft.net/en-us/get-minecraft" target="_blank">buy the game</a>. Once
+                    you've
+                    made your purchase, download the game and run the installer &#40;which should walk you through
+                    installation step-by-step&#41;.
+                </p>
+
+                <p>
+                    Now that you've got it installed, you're ready to start up Minecraft for the first time! Open the
+                    Minecraft launcher, log in, and make sure "Latest release" is selected as the version. Two benefits
+                    of
+                    Minecraft are access to all previous versions of the game and the use of mods, but for now, we'll
+                    just
+                    start with the most recent Vanilla (unmodded) version.
+                </p>
+                <p>
+                    Now that the game has loaded, you'll want to select "Single Player" and create a new world. There
+                    are
+                    three game modes available on the world-creation screen:<br /><br />
+                <ul>
+                    <li>
+                        Survival Mode - this mode is the basic mode of the game. No cheats (unless you enable them),
+                        hunger,
+                        and the ability to die and respawn.
+                    </li>
+                    <li>
+                        Creative Mode - this mode gives you unlimited access to cheats, the creative menu, and flight.
+                        You
+                        cannot die in this mode (unless you fall into the void). Great for building and experimenting.
+                    </li>
+                    <li>
+                        Hardcore Mode - this mode is the most difficult and notorious. The game is locked into Hard
+                        difficulty, which means enemies are stronger and more dangerous. You can also die from hunger in
+                        this difficulty. The most significant part of Hardcore mode is the fact that you only have one
+                        life&#8212; if you die, you do not respawn. You can either spectate the world or delete it.
+                    </li>
+                </ul>
+                For this guide, we will be using Survival mode set to Normal difficulty.
+                </p>
+            </section>
+            <section class="main-section" id="your_first_night">
+                <header>
+                    <h2>Your First Night<h2>
+                </header>
+                <div>
+                    <h3>
+                        Basic controls
+                    </h3>
+                    Now that you've loaded into the game, you can start playing. Move around with <code>W</code>,
+                    <code>A</code>, <code>S</code>, and <code>D</code>, and use <code>space</code> to jump. You can use
+                    <code>right-click</code> to interact with items and use what you have in your off-hand.
+                </div>
+                <h3>Your User Interface</h3>
+                <p>
+                    The User Interface (UI) includes some key features:
+                <ul>
+                    <li>
+                        Your health and hunger bars (bottom right of the screen). They should be completely full upon
+                        starting a new game.
+                    </li>
+                    <li>
+                        Your hotbar (bottom middle of screen). This is where you can quickly access nine inventory items
+                        and
+                        hold them in your hand.
+                    </li>
+                    <li>
+                        Your inventory screen. The inventory key is usually set to <code>E</code> upon starting the game
+                        for
+                        the first time. This screen has a small 2 x 2 crafting grid, 27 inventory slots, a view of your
+                        character, and slots to place armor and an offhand item (such as a shield).
+                    </li>
+                </ul>
+                </p>
+                <p>
+                    Once you've familiarized yourself with the UI, take a look around at your surroundings. The region
+                    in
+                    which you've spawned is referred to as a <em>biome</em>. There are different flora, fauna, and
+                    structures in differing biomes. Most biomes, however, contain one of the most vital and basic
+                    features
+                    of Minecraft: trees.
+                </p>
+                <div>
+                    <h3>
+                        Crafting tools
+                    </h3>
+                    <figure id="pickaxe">
+                        <img src="https://tinyimg.io/i/WN977Lp.png" />
+                        <figcaption>how to craft a wooden pickaxe</figcaption>
+                    </figure>
+                    You may have heard the phrase "punching trees" before. This is apt, because in order to collect
+                    wood,
+                    you'll need to "punch" whatever trees you see around you. To punch, use <code>left-click</code>.
+                    Items
+                    are automatically added to your inventory when you walk near them. Then, you can place the wood into
+                    your crafting grid to create four wooden planks. Put these planks back into the crafting grid (one
+                    in
+                    each slot) and you've just made a crafting table! This tool will allow you to craft so much more
+                    than
+                    your small crafting grid.
+                </div>
+                <p>
+                    Now that you've got a crafting table, you can make some rudimentary wooden tools. However, I
+                    recommend
+                    making only a pickaxe. You can use the wooden pickaxe to mine enough cobblestone for a stone
+                    pickaxe,
+                    which is much more efficient and durable. You can get cobblestone from stone in caves or just in the
+                    ground under dirt. You should also use this stone to craft a stone sword, axe, shovel, and furnace.
+                </p>
+                <p>
+                <h3>
+                    Your first base
+                </h3>
+                It's important to remember that hostile mobs come out once the sun sets. These include zombies,
+                skeletons,
+                creepers, spiders, and more. You can try to fight these mobs your first night, but it can get very
+                overwhelming very quickly. My recommendation is to craft a bed to skip the night.
+                </p>
+                <p>
+                    In order to craft a bed, you'll need three pieces of wool in the same color, as well as three wooden
+                    planks. You can obtain wool from sheep. Shearing sheep can drop 1-3 pieces of wool, but if you don't
+                    have shears yet, you'll have to kill the sheep. Killed sheep only drop one wool each.
+                </p>
+                <p>
+                    Another way to obtain a bed is to take one from a village. All villages have beds in the villager
+                    houses, which is convenient if you spawn in near one.
+                </p>
+                <p>
+                    You'll want to make a small shelter before the sun goes down to protect yourself, especially if you
+                    don't have a bed yet. A wooden box is typically enough, along with a door and some torches. A chest
+                    to
+                    store items will be useful as well. Get your shelter built, and settle in for the night.
+                </p>
+            </section>
+            <section class="main-section" id="gathering_resources">
+                <header>
+                    <h2>
+                        Gathering Resources
+                    </h2>
+                </header>
+                <p>
+                    Congratulations, you've survived your first night! Now you'll want to get some resources for
+                    crafting.
+                    The most reliable way to gather resources is mining, although caving can sometimes be faster. The
+                    basic
+                    resources you'll want to collect include iron, for making iron tools and armor, and coal, to smelt
+                    your
+                    ores and cook food.
+                </p>
+                <p>
+                    Mining can be as simple or complex as you like. The simplest mines are staircase-style. Just dig
+                    down
+                    and forward, but <strong>never dig straight down</strong>. Doing this can result in falling a great
+                    distance into a cave or dropping down into lava.
+                </p>
+
+                <p>
+                    Once you've gotten some iron and coal, head back to your base to smelt it in a furnace. Use the
+                    resulting iron ingots to craft yourself some armor, a shield, and a bucket for carrying water.
+                </p>
+                <figure id="mine-diamonds">
+                    <img src="https://bit.ly/3hKkZFR" />
+                    <figcaption>diamonds!!</figcaption>
+                </figure>
+                <p>
+                    While you're mining, you may come across other ores, such as copper, gold, redstone, lapis lazuli,
+                    emeralds, or (hopefully) diamonds. Be cautious; gold, redstone, emerald and diamond ores must be
+                    mined
+                    with an iron pickaxe or better, or else they drop nothing.
+                </p>
+                <p>
+                    Another resource you'll definitely need is food. You can get raw meat from cows, pigs, chickens,
+                    sheep,
+                    goats, and rabbits. You can also get fish by either using a fishing rod or scooping one out of the
+                    water
+                    with a bucket. Bread can be crafted from three pieces of wheat. There are many other foods to
+                    discover
+                    as you play the game. Cooked food gives more health and saturation than raw food.
+                </p>
+            </section>
+            <section class="main-section" id="entering_the_nether">
+                <header>
+                    <h2>
+                        Entering the Nether
+                    </h2>
+                </header>
+                <figure id="nether-portal">
+                    <img src="https://bit.ly/3kvAJOV" />
+                    <figcaption>nether portal</figcaption>
+                </figure>
+                <p>
+                    Now that you've got some food and armor, you're ready to enter the Nether. To get there, you'll need
+                    to
+                    create a 5-high x 4-wide hollow rectangle of obsidian. Light the center of the Nether portal with a
+                    flint and steel and watch it fill with a purple portal substance. Step inside to be transported.
+                </p>
+                <p>
+                    The Nether is a hot dimension. How hot? Well, water instantly evaporates when placed. Look out for
+                    the
+                    mobs that inhabit this area, like ghasts (which shoot dangerous fireballs), piglins (hostile
+                    pig-people,
+                    unless you're wearing gold), and zombified piglins (the piglin's <em>extremely</em> strong zombie
+                    counterpart. They willl ignore you unless you hit one of them, but <strong>do not hit one of
+                        them</strong>, even accidentally. The entire horde will turn on you). There are many other mobs,
+                    in
+                    the Nether, so keep your eyes peeled.
+                </p>
+                <p>
+                    Your first step in the Nether is to check your coordinates (<code>F3</code>). It is very easy to
+                    lose
+                    track of your portal home. It's also a good idea to keep an eye out for any landmarks while you
+                    explore.
+                    This will help you find your way back more easily without having to constantly check your
+                    coordinates.
+                </p>
+                <figure id="zombified-piglin">
+                    <img src="https://bit.ly/3tUXe2x" />
+                    <figcaption>zombified piglin</figcaption>
+                </figure>
+                <p>
+                    The next thing that you'll want to do is begin searching for a Nether fortress. These large brick
+                    structures contain blaze spawners, as well as some loot. Blazes are needed for their rods, which you
+                    can
+                    use to craft eyes of ender (necessary for beating the game). These mobs are dangerous, shooting
+                    fireballs and dealing melee damage. It's useful to have a shield while fighting them.
+                </p>
+                <p>
+                    When you have your blaze rods, you can choose to either leave the Nether to obtain ender pearls (the
+                    other ingredient for eyes of ender), or&#8212; if you have gold ingots&#8212; barter with piglins,
+                    who
+                    have a chance of giving ender pearls in a trade.
+                </p>
+            </section>
+            <section class="main-section" id="getting_to_the_end">
+                <header>
+                    <h2>
+                        Getting to the End
+                    </h2>
+                </header>
+                <p>
+                    The End is the third and final dimension in Minecraft (for now). This is where you will fight the
+                    Ender
+                    dragon. Getting there is a bit of an involved process. The first thing you will need to do is get at
+                    least twelve ender pearls. You can these from either bartering with piglins (explained above),
+                    trading
+                    with cleric villagers, or killing endermen. It's really your choice how you want to get the ender
+                    pearls, but one of the easiest ways is villager trading. Here's a quick guide:
+                <ol>
+                    <li>Find a village</li>
+                    <li>Find the fletcher villager (you can "make" a fletcher by crafting a fletching table and putting
+                        it
+                        near an unemployed villager)</li>
+                    <li>Trade sticks to amass a large amount of emeralds</li>
+                    <li>Either find the existing brewing stand in the church or craft one</li>
+                    <li>Get a cleric villager</li>
+                    <li>Trade with the cleric over and over until they reach expert level (there is unfortunately a
+                        &#8531;
+                        chance the ender pearl trade will not appear, in which case you'll have to start again with a
+                        new
+                        cleric)
+                </ol>
+                </p>
+                <p>
+                    When you have your twelve ender pearls, craft them with blaze powder (obtained from blaze rods in a
+                    crafting grid) to get eyes of ender. Throwing an eye of ender will point you in the direction of the
+                    stronghold, where the end portal is. The trip may take a while, but be patient and keep following
+                    the
+                    eye of ender. Once it goes downward into the ground, start digging (carefully!) until you reach
+                    stone
+                    bricks. You've made it!
+                </p>
+                <figure id="eye-of-ender">
+                    <img src="https://i.imgur.com/hTTDfbD.png" />
+                    <figcaption>an eye of ender</figcaption>
+                </figure>
+                <p>
+                <h3>Finding the portal</h3>
+                The stronghold is a maze-like structure that is filled with hostile mobs, loot, and strange rooms. Keep
+                your
+                eyes open as you traverse each room. When you find the portal room, it's useful to set your spawn with a
+                bed
+                in case you die fighting the dragon. If the stronghold is very far from your base, you'll have to repeat
+                the
+                journey every time you die.
+                </p>
+                <p>
+                    The portal will have twelve slots for eyes of ender. Place an eye in each spot, and the portal will
+                    activate. Be sure before you enter, however, because once inside, you cannot leave the End until you
+                    either die or defeat the dragon. When you feel ready to face the dragon, jump inside the portal.
+                </p>
+            </section>
+            <section class="main-section" id="defeating_the_dragon">
+                <header>
+                    <h2>
+                        Defeating the Dragon
+                    </h2>
+                </header>
+                <p>
+                    There are two main parts to the dragon fight: destroying the end crystals and killing the dragon
+                    herself. You'll also have to avoid aggroing the endermen that live there in the end. They become
+                    hostile
+                    when you make eye contact with them or attack them. As long as you avoid doing that, the dragon will
+                    be
+                    your main focus.
+                </p>
+                <p>
+                <h3>Destroying the end crystals</h3>
+                The end crystals are located atop the giant obsidian towers that are on the main end island. They are
+                explosive and very dangerous, so your best bet to breaking them is shooting them with an bow and arrow.
+                Barring that, you can also tower up to them and break them with your fist, but the resulting explosion
+                will
+                be very powerful. Take your time and make sure you destroy every crystal, because the dragon uses them
+                to
+                regenerate her health. If you break a crystal while she's drawing health from it, it damages her.
+                </p>
+                <p>
+                    Once all the crystals have been destroyed, it's time to take on the dragon herself. You can go about
+                    this multiple ways: shooting her with arrows, using bed explosions, and melee. We'll be going over
+                    the
+                    final tactic.
+                </p>
+                <figure id="ender-dragon">
+                    <img
+                        src="https://fictionhorizon.com/wp-content/uploads/2021/07/Can-You-Tame-The-Ender-Dragon-In-Minecraft-And-How-To-Do-It-00.jpg" />
+                    <figcaption>the ender dragon</figcaption>
+                </figure>
+                <p>
+                <h3>Killing the dragon</h3>
+                The dragon attacks in three ways. She breathes harmful dragon breath, charges you, and throws you,
+                possibly
+                to your death. In the course of the dragon's flight, she will periodically perch down on the bedrock
+                platform in the center of the island. When she's there, you can attack her head with your sword. Do this
+                as
+                many times as necessary, and you can kill the dragon. It's that simple!
+                </p>
+                <p>
+                <h3>After the fight</h3>
+                When the dragon is dead, three things happen: XP orbs will rain down, the main portal will open up, and
+                an
+                end gateway will appear. If you like, you can go through the end gateway using an ender pearl and
+                explore
+                the rest of the End. There you can find end cities, which contain loot, and end ships, which have
+                elytras in
+                addition to the loot chests found there. Elytras are extremely useful, as they allow you to glide
+                through
+                the air and, with the use of firework rockets, fly.
+                </p>
+                <p>
+                    When you go through the main portal, the end poem will be displayed, followed by the game credits.
+                    Afterwards, you will be teleported back to your bed or (if you have no bed) to spawn.
+                </p>
+            </section>
+            <section class="main-section" id="what_now">
+                <header>
+                    <h2>
+                        What Now
+                    </h2>
+                </header>
+                <figure id="have-fun">
+                    <img src="https://bit.ly/3hPaqB8" />
+                    <figcaption>have fun!</figcaption>
+                </figure>
+                <p>
+                    So, you've defeated the dragon! Congratulations!<br />
+                    <br />
+                    What now?<br />
+                    Well, there are a lot of things you can do. You can take on an ocean monument, pillager raid, or
+                    woodland mansion. Or, you could try defeating Minecraft's other boss, the Wither. Expand your base,
+                    conquer structures, create redstone contraptions, the possibilities are endless! The game even has
+                    an
+                    advancement tree that can guide you on your way.
+                </p>
+            </section>
+            <section class="main-section" id="more_resources">
+                <header>
+                    <h2>
+                        More Resources
+                    </h2>
+                </header>
+                <p>
+                    I hope this guide was helpful. As I said in the introduction, I'm just a girl who likes to play a
+                    lot of
+                    Minecraft. To get (much) more in-depth information on the game, check out some of the following
+                    resources:
+                <ul>
+                    <li><a href="https://www.minecraft.net/" target="_blank">Official Minecraft Site</a></li>
+                    <li><a href="https://minecraft.fandom.com/wiki/Minecraft_Wiki" target="_blank">Official Minecraft
+                            Wiki</a></li>
+                    <li><a href="https://www.youtube.com/channel/UCsuKgiVb2KJ2sZdrrwoAqsA" target="_blank"
+                            title='He has a great series called "The Minecraft Guide"!'>Wattles, one of my favorite
+                            Minecraft YouTubers</a></li>
+                    <li><a href="https://www.reddit.com/r/Minecraft/" target="_blank">Minecraft Subreddit</a></li>
+                </ul>
+                Thank you so much for reading. Happy Minecrafting!
+                </p>
+                <span id="signature">&#8212;<span id="g">g</span>ina</span>
+            </section>
+        </main>
+    </div>
+</body>
+
+</html>
